@@ -1,0 +1,21 @@
+{
+"name":"Sam",
+"place":"Russia",
+"profession":"plumber",
+"education":["highschool","college","professional course"],
+"family":[
+
+         {
+          "name":"Tim",
+          "relation":"father"
+         },
+         {
+          "name":"Ken",
+          "relation":"son"
+         },
+         {
+          "name":"Jenny",
+          "relation":"mother"
+         }
+]
+}

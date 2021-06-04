@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="1" ignored="0" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="51307" started-at="2021-06-03T07:37:07 IST" finished-at="2021-06-03T07:37:58 IST">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="15479" started-at="2021-06-03T07:37:07 IST" finished-at="2021-06-03T07:37:22 IST">
+      <class name="qtpselenium.testcases.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:qtpselenium.testcases.LoginTest@32d2fa64]" name="init" is-config="true" duration-ms="275" started-at="2021-06-03T07:37:09 IST" finished-at="2021-06-03T07:37:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="doLogin(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:qtpselenium.testcases.LoginTest@32d2fa64]" name="doLogin" duration-ms="11943" started-at="2021-06-03T07:37:09 IST" data-provider="getData" finished-at="2021-06-03T07:37:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=ashishthakur1983, ExpectedResult=success, Password=pass@1234, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6bbe85a8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Title of page not corect,
+Some spelling mistake]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Title of page not corect,
+Some spelling mistake
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at qtpselenium.driver.GenericKeywords.assertAll(GenericKeywords.java:192)
+at qtpselenium.testcases.LoginTest.doLogin(LoginTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:qtpselenium.testcases.LoginTest@32d2fa64]" name="quit" is-config="true" duration-ms="1012" started-at="2021-06-03T07:37:21 IST" finished-at="2021-06-03T07:37:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:qtpselenium.testcases.LoginTest@32d2fa64]" name="init" is-config="true" duration-ms="1" started-at="2021-06-03T07:37:22 IST" finished-at="2021-06-03T07:37:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="doLogin(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:qtpselenium.testcases.LoginTest@32d2fa64]" name="doLogin" duration-ms="8" started-at="2021-06-03T07:37:22 IST" data-provider="getData" finished-at="2021-06-03T07:37:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=somerandom1, ExpectedResult=failure, Password=pass@1234, Runmode=N, Browser=Chrome}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6bbe85a8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping test as runmode was N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping test as runmode was N
+at qtpselenium.testcases.LoginTest.doLogin(LoginTest.java:57)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:qtpselenium.testcases.LoginTest@32d2fa64]" name="quit" is-config="true" duration-ms="23" started-at="2021-06-03T07:37:22 IST" finished-at="2021-06-03T07:37:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:qtpselenium.testcases.LoginTest@32d2fa64]" name="init" is-config="true" duration-ms="1" started-at="2021-06-03T07:37:22 IST" finished-at="2021-06-03T07:37:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="doLogin(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:qtpselenium.testcases.LoginTest@32d2fa64]" name="doLogin" duration-ms="12" started-at="2021-06-03T07:37:22 IST" data-provider="getData" finished-at="2021-06-03T07:37:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=somerandom2, ExpectedResult=failure, Password=pass@1234, Runmode=N, Browser=Mozilla}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6bbe85a8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping test as runmode was N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping test as runmode was N
+at qtpselenium.testcases.LoginTest.doLogin(LoginTest.java:57)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:qtpselenium.testcases.LoginTest@32d2fa64]" name="quit" is-config="true" duration-ms="34" started-at="2021-06-03T07:37:22 IST" finished-at="2021-06-03T07:37:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- qtpselenium.testcases.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="Buy Stock Test" duration-ms="24412" started-at="2021-06-03T07:37:23 IST" finished-at="2021-06-03T07:37:47 IST">
+      <class name="qtpselenium.testcases.BuyStockTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:qtpselenium.testcases.BuyStockTest@50d0686]" name="init" is-config="true" duration-ms="1" started-at="2021-06-03T07:37:23 IST" finished-at="2021-06-03T07:37:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="buyStockTest(org.testng.ITestContext)[pri:0, instance:qtpselenium.testcases.BuyStockTest@50d0686]" name="buyStockTest" duration-ms="24324" started-at="2021-06-03T07:37:23 IST" finished-at="2021-06-03T07:37:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51e0301d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyStockTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:qtpselenium.testcases.BuyStockTest@50d0686]" name="quit" is-config="true" duration-ms="76" started-at="2021-06-03T07:37:47 IST" finished-at="2021-06-03T07:37:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- qtpselenium.testcases.BuyStockTest -->
+    </test> <!-- Buy Stock Test -->
+    <test name="Delete Stock Test" duration-ms="11232" started-at="2021-06-03T07:37:47 IST" finished-at="2021-06-03T07:37:58 IST">
+      <class name="qtpselenium.testcases.DeleteStockTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:qtpselenium.testcases.DeleteStockTest@3aeaafa6]" name="init" is-config="true" duration-ms="0" started-at="2021-06-03T07:37:47 IST" finished-at="2021-06-03T07:37:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="deleteStockTest(org.testng.ITestContext)[pri:0, instance:qtpselenium.testcases.DeleteStockTest@3aeaafa6]" name="deleteStockTest" duration-ms="11176" started-at="2021-06-03T07:37:47 IST" finished-at="2021-06-03T07:37:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@43b40233]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteStockTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:qtpselenium.testcases.DeleteStockTest@3aeaafa6]" name="quit" is-config="true" duration-ms="51" started-at="2021-06-03T07:37:58 IST" finished-at="2021-06-03T07:37:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- qtpselenium.testcases.DeleteStockTest -->
+    </test> <!-- Delete Stock Test -->
+  </suite> <!-- Suite -->
+</testng-results>

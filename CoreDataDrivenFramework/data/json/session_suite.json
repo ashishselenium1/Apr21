@@ -1,0 +1,56 @@
+{
+  "testdata": [
+    {
+      "testname": "Login Test",
+      "data": [
+        {
+          "runmode": "Y",
+          "browser": "chrome",
+          "username": "ashishthakur1983@gmail.com",
+          "password": "pass@1234",
+          "expected": "success"
+        },
+        {
+          "runmode": "N",
+          "browser": "mozilla",
+          "username": "ashishthakur1983@gmail.com",
+          "password": "pass@1234",
+          "expected": "success"
+        },
+        {
+          "runmode": "N",
+          "browser": "chrome",
+          "username": "ashish@gmail.com",
+          "password": "pass@1234",
+          "expected": "failure"
+        }
+      ]
+    },
+    {
+      "testname": "Manage Profile",
+      "data": [
+        {
+          "runmode": "Y",
+          "browser": "chrome",
+          "username": "ashishthakur1983@gmail.com",
+          "password": "pass@1234",
+          "expected": "success"
+        },
+        {
+          "runmode": "Y",
+          "browser": "mozilla",
+          "username": "ashishthakur1983@gmail.com",
+          "password": "pass@1234",
+          "expected": "success"
+        },
+        {
+          "runmode": "Y",
+          "browser": "chrome",
+          "username": "ashish@gmail.com",
+          "password": "pass@1234",
+          "expected": "failure"
+        }
+      ]
+    }
+  ]
+}
